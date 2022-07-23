@@ -1895,15 +1895,31 @@ footer a.logo:hover {
 .play-movie--link {
     display           : flex;
     align-items       : center;
-    /*justify-content : space-between;
-    */
+    /* justify-content: space-between; */
     padding           : 16px 10px;
     border-bottom     : 1px solid rgb(62, 62, 62);
-    transition        : all 0.25s ease;
-    -webkit-transition: all 0.25s ease;
-    -moz-transition   : all 0.25s ease;
-    -ms-transition    : all 0.25s ease;
-    -o-transition     : all 0.25s ease;
+    transition        : 0.25s ease;
+    -webkit-transition: 0.25s ease;
+    -moz-transition   : 0.25s ease;
+    -ms-transition    : 0.25s ease;
+    -o-transition     : 0.25s ease;
+}
+
+.play-movie--link:hover {
+    filter                         : brightness(85%);
+    -webkit-filter                 : brightness(85%);
+    /* background                  : linear-gradient(to right, #ff8a00, #ff2070);
+    -webkit-background-clip        : text;
+    -webkit-text-fill-color        : transparent;
+    -webkit-box-decoration-break   : clone; */
+}
+
+.play-movie--link:hover.play-movie--img {
+    transition        : .25s ease;
+    -webkit-transition: .25s ease;
+    -moz-transition   : .25s ease;
+    -ms-transition    : .25s ease;
+    -o-transition     : .25s ease;
 }
 
 .play-movie--img {
@@ -1915,38 +1931,7 @@ footer a.logo:hover {
     -moz-border-radius   : 6px;
     -ms-border-radius    : 6px;
     -o-border-radius     : 6px;
-    transition           : .25s ease;
-    -webkit-transition   : .25s ease;
-    -moz-transition      : .25s ease;
-    -ms-transition       : .25s ease;
-    -o-transition        : .25s ease;
-
 }
-
-.play-movie--link:hover {
-    transition                     : all .25s ease;
-    -webkit-transition             : all .25s ease;
-    -moz-transition                : all .25s ease;
-    -ms-transition                 : all .25s ease;
-    -o-transition                  : all .25s ease;
-    filter                         : brightness(85%);
-    -webkit-filter                 : brightness(85%);
-    /* background                  : linear-gradient(to right, #ff8a00, #ff2070);
-    -webkit-background-clip        : text;
-    -webkit-text-fill-color        : transparent;
-    -webkit-box-decoration-break   : clone; */
-
-}
-
-.play-movie--link:hover img {
-    transform        : scale(1.07);
-    -webkit-transform: scale(1.07);
-    -moz-transform   : scale(1.07);
-    -ms-transform    : scale(1.07);
-    -o-transform     : scale(1.07);
-}
-
-
 
 .play-movie--name {
     font-size         : 13px;

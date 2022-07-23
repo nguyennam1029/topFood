@@ -436,7 +436,7 @@
 
         .recoment-product {
             text-align: center;
-            width     : 100% !important;
+            width     : 100%;
         }
 
         .rating-list.recoment {
